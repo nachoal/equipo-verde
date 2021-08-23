@@ -6,15 +6,12 @@ class CategoriesController < ApplicationController
   def show
     @category = Category.find(params[:id])
     @products = Product.where(category_id: @category.id)
-    raise
-
   end
 
+  private
 
-private
-
-def category_params
-  params.require(:category).permit(:name, :description)
-end
+  def category_params
+    params.require(:category).permit(:name, :description)
+  end
 
 end
