@@ -1,2 +1,15 @@
-<h1>Orders#new</h1>
-<p>Find me in app/views/orders/new.html.erb</p>
+
+<div class="container mt-4">
+  <h1>Tu pedido</h1>
+  <ul>
+    <li><%= @product.name %> x 1  =  $<%= @product.price %></li>
+
+    <li>Total: <%= @product.price %></li>
+  </ul>
+  <%= simple_form_for @order do |f| %>
+    <%= f.input :status, as: :hidden, input_html: { value: "processed"} %>
+    <%= f.input :product_id, as: :hidden, input_html: { value: @product.id } %>
+    <%= f.submit "Completar orden", class: 'btn btn-info' %>
+  <% end %>
+
+</div>

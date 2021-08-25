@@ -1,2 +1,32 @@
+<div class="banner">
+    <div class="container">
+      <h2 class="text-end">End aligned text on all viewport sizes.</h2>
+    </div>
+</div>
+<center>
 <h1>Categories#index</h1>
 <p>Find me in app/views/categories/index.html.erb</p>
+
+<ul>
+  <% @categories.each do |category| %>
+    
+    <%= link_to category.name, category_path(category) %> 
+    
+  <% end %>
+  </center> 
+  </ul>
+  
+  <div class="cards">
+  <div align="left" ><img src="https://chile-labs.cl/util/img/Maceteros.JPG"></div>
+  <div align="center"><img src="https://chile-labs.cl/util/img/Pastelon_Basico.JPG"></div>
+  <div align="right"><img src="https://chile-labs.cl/util/img/Limpiapies.JPG"></div>
+  </div>
+  
+
+  
+
+  
+
+  
+
+

@@ -1,0 +1,20 @@
+<div class="banner">
+    <div class="container">
+      <h2 class="text-end">End aligned text on all viewport sizes.</h2>
+    </div>
+</div>
+<center>
+<ul>
+  <% @products.each do |product| %>
+    
+   <%= link_to product.name, product_path(product) %>
+   &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    
+  <% end %>
+  </center>
+  <br> </br>
+  <br> </br>
+  </ul>
