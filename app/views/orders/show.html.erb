@@ -1,2 +1,17 @@
-<h1>Orders#show</h1>
-<p>Find me in app/views/orders/show.html.erb</p>
+<div class="container">
+  <h1>Tu orden realizada</h1>
+  <ul>
+    <% @order.line_items.each do |line_item| %>
+      <li><%= line_item.product.name %> | cantidad: <%= line_item.amount %> | precio:  <%= line_item.total_price %></li>
+    <% end %>
+
+    Total pagado: <%= @order.total_price %>
+  </ul>
+
+  <%= link_to categories_path do %>
+    <div class="btn btn-info">
+      Seguir comprando
+    </div>
+  <% end %>
+
+</div>

@@ -4,6 +4,12 @@ class CategoriesController < ApplicationController
   end
 
   def show
+    #if Order.exists?(user_id: current_user)
+    # @order = Order.find(user_id: current_user)
+    #else
+    # @order = Order.new
+    #end
+    #@line_item = Line_item.new
     @category = Category.find(params[:id])
     @products = Product.where(category_id: @category.id)
   end

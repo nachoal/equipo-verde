@@ -1,4 +1,22 @@
-<h1>Categories#show</h1>
-<p>Find me in app/views/categories/show.html.erb</p>
+<div class="banner">
+    <div class="container">
+      <h2 class="text-end">End aligned text on all viewport sizes.</h2>
+    </div>
+</div>
 
-<!-- ACA VAN TODOS LOS PRODUCTOS PARA COMPRAR (FIGMA)>
+<!-- ACA VAN TODOS LOS PRODUCTOS PARA COMPRAR (FIGMA)> --> 
+
+<ul>
+  <% @products.each do |product| %>
+    <li>
+      <%= product.name  %>, 
+      <%= product.conent %>
+      $<%= product.price %>
+      <%= product.price.currency %>
+      <%= link_to new_order_path(product_id: product.id) do %>
+        <div class="btn btn-info">Comprar</div>
+      <% end %>
+    </li>
+
+  <% end %>
+</ul>
