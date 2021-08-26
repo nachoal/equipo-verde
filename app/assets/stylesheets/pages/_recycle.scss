@@ -1,0 +1,27 @@
+.banner {
+  background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/elcomercio/4SZBWXH22ZH4BBROGRPRIY7ZQI.jpg);
+  padding: 380px 0;
+  background-image: no-repeat;
+  background-image: fixed;
+  background-image: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+p{
+  text-align: justify;
+}
+
+.btn-flat {
+  color: rgb(89, 243, 141);
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #1EDD88;
+  transition: background 0.3s ease;
+}
+
+.btn-flat:hover {
+  background: #1BCB7F;
+  color: rgb(71, 224, 105);
