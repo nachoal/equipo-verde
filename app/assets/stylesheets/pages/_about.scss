@@ -1,0 +1,23 @@
+.banner3 {
+    background-image: url(https://www.hogar.mapfre.es/media/2018/08/el_reciclaje_y_otras_formas_de_cuidar_el_medio_ambiente.jpg);
+    padding: 250px 0;
+    background-image: no-repeat;
+  
+    background-image: fixed;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  #titulo-about {
+    font-size: 60px;
+  }
+
+  .banner3 h2 {
+    margin: 0;
+    color: rgb(7, 7, 7);
+    text-shadow: 1px 1px 3px rgb(255, 255, 255);
+    font-weight: bold;
+  }
