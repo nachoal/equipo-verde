@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+  
     <title>EquipoVerde</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -14,8 +15,9 @@
 
   <body>
     <%= render 'shared/navbar' %>
-    <%= render 'shared/flashes' %>
-
+    <%= render 'shared/flashes' %> 
     <%= yield %>
+    <%= render 'shared/footer' %> 
   </body>
+  
 </html>
