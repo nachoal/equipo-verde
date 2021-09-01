@@ -8,17 +8,21 @@ Product.destroy_all
 puts "Creando categorias..."
 maceteros = Category.create!(
   name: "Maceteros",
-  description: "Dale una mirada distinta a tu jardin"
+  description: "Dale una mirada distinta a tu jardin",
+  image_url: "https://greenbricks.cl/wp-content/uploads/2019/12/KADU.jpg"
 )
 
 pastelon = Category.create!(
   name: "Pastelón",
-  description: "Transforma la entrada de tu hogar y al mismo tiempo impactas al mundo"
+  description: "Transforma la entrada de tu hogar y al mismo tiempo impactas al mundo",
+  image_url: "https://images.squarespace-cdn.com/content/v1/558095e4e4b095c5b4d764ee/1602278477469-MY24PKABT9PS1NY97B44/IMG_1650.JPG?format=2500w"
 )
 
 limpiapies = Category.create!(
   name: "Limpiapies",
-  description: "La entrada de la casa con un diseño y producto reciclado"
+  description: "La entrada de la casa con un diseño y producto reciclado",
+  image_url: "https://www.qrubber.com.pe/imgmodulo/imagengaleria/106.png?time=1562261424"
+
 )
 
 puts "Creando dos productos para maceteros"
@@ -82,3 +86,4 @@ LineItem.create!(
   amount: 1,
   total_price: producto_limpiapies.price.fractional
 )
+puts "fin"
