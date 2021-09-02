@@ -14,8 +14,14 @@
       $<%= product.price %>
       <%= product.price.currency %>
       <%= link_to new_order_path(product_id: product.id) do %>
+      <div class="btn btn-info">Comprar</div>
       <% end %>
-    <div class="btn btn-info">Comprar</div>
   <% end %>
 </ul>
+</div>
+
+<div class="row">
+    <div class="col-6">.col-6</div>
+    <div class="col-6">.col-6</div>
+  </div>
 </div>
