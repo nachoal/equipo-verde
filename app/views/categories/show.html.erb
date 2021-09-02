@@ -5,23 +5,27 @@
 </div>
 
 <div class="container">
-<ul>
-  <% @products.each do |product| %>
-    
-      <%= image_tag product.image_url, class:"imagenproducto" %>
-      <%= product.name  %>, 
-      <%= product.conent %>
-      $<%= product.price %>
-      <%= product.price.currency %>
-      <%= link_to new_order_path(product_id: product.id) do %>
-      <div class="btn btn-info">Comprar</div>
-      <% end %>
-  <% end %>
-</ul>
+  <ul>
+    <% @products.each do |product| %>
+      
+      <div class="row">
+        <div class="col-6">
+          <%= image_tag product.image_url, class:"imagenproducto" %>
+        </div>
+        <div class="col-6">
+          <%= product.name %>, 
+          <%= product.conent %>
+          $<%= product.price %>
+          <%= product.price.currency %>
+          <%= link_to new_order_path(product_id: product.id) do %>
+            <div class="btn btn-info m-3">Comprar</div>
+          <% end %>
+          <%= link_to categories_path do %>
+            <div class="btn btn-info m-3">Seguir comprando</div>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </ul>
 </div>
 
-<div class="row">
-    <div class="col-6">.col-6</div>
-    <div class="col-6">.col-6</div>
-  </div>
-</div>
