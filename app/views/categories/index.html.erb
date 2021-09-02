@@ -14,7 +14,7 @@
 
 <div class="categorias container">
   <% Category.all.each do |category| %>
-    <div class="targeta1 card bg-dark text-white my-5 ">
+    <div class="targeta1 card bg-dark text-white my-5">
       <%= image_tag category.image_url, class:"card-img" %>
       <div class="card-img-overlay d-flex justify-content-center align-items-center flex-column">
         <%= link_to category.name, category_path(category.id)%> 
@@ -23,5 +23,6 @@
     </div>
   <% end %>
 </div>
+
 
 

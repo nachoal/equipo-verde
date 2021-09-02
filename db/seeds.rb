@@ -22,43 +22,47 @@ limpiapies = Category.create!(
   name: "Limpiapies",
   description: "La entrada de la casa con un diseño y producto reciclado",
   image_url: "https://www.qrubber.com.pe/imgmodulo/imagengaleria/106.png?time=1562261424"
-
 )
 
 puts "Creando dos productos para maceteros"
 Product.create!(
   name: 'macetero verde',
   conent: 'un macetero verde bonito',
-  price: 20,
-  category: maceteros
+  price: 5990,
+  category: maceteros,
+  image_url: "https://dvp.cl/wp-content/uploads/2016/09/1715100002560-1.jpg"
 )
 
 puts "Creando dos productos para pastelon"
 producto_pastelon = Product.create!(
   name: 'pastelon reciclado',
-  conent: 'un pastelon verde bonito',
+  conent: 'un pastelon liso bonito',
   price: 50,
-  category: pastelon
+  category: pastelon,
+  image_url: "https://vibradosflorencia.cl/images/productos/720-pastelon-liso-40x40-02.png"
 )
 Product.create!(
   name: 'pastelon reciclado rojo',
   conent: 'un pastelon rojo bonito',
   price: 100,
-  category: pastelon
+  category: pastelon,
+  image_url: "https://pastelonescanales.cl/wp-content/uploads/2015/10/Modelo-Serena-Rojo.jpg"
 )
 
 puts "Creando dos productos para limpiapies"
 Product.create!(
   name: 'limpiapies reciclado',
-  conent: 'un limpiapies verde bonito',
+  conent: 'un limpiapies verde y azul bonito',
   price: 10,
-  category: limpiapies
+  category: limpiapies,
+  image_url: "https://static.wixstatic.com/media/54ff2b_f2c30024f9ee44b29822950272d49375~mv2.jpg/v1/fill/w_1080,h_984,al_c,q_85/54ff2b_f2c30024f9ee44b29822950272d49375~mv2.jpg"
 )
 producto_limpiapies = Product.create!(
   name: 'limpiapies reciclado rojo',
-  conent: 'un limpiapies rojo bonito',
+  conent: 'un limpiapies rojo y negro bonito',
   price: 1000,
-  category: limpiapies
+  category: limpiapies,
+  image_url: "https://cdnx.jumpseller.com/grupo-ciclos/image/11972640/resize/540/540?1623184048"
 )
 
 puts "Creando un usuario de prueba"

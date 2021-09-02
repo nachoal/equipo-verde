@@ -1,19 +1,21 @@
 <div class="banner">
     <div class="container">
-      <h2 class="text-end">End aligned text on all viewport sizes.</h2>
+      <h2 class="text-end">Detalle del producto</h2>
     </div>
 </div>
+
+<div class="container">
 <ul>
   <% @products.each do |product| %>
-    <li>
+    
+      <%= image_tag product.image_url, class:"imagenproducto" %>
       <%= product.name  %>, 
       <%= product.conent %>
       $<%= product.price %>
       <%= product.price.currency %>
       <%= link_to new_order_path(product_id: product.id) do %>
-        <div class="btn btn-info">Comprar</div>
       <% end %>
-    </li>
-
+    <div class="btn btn-info">Comprar</div>
   <% end %>
 </ul>
+</div>
