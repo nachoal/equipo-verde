@@ -42,7 +42,7 @@ producto_pastelon = Product.create!(
   image_url: "https://vibradosflorencia.cl/images/productos/720-pastelon-liso-40x40-02.png"
 )
 Product.create!(
-  name: 'Pastelón RecicladoRojo',
+  name: 'Pastelón Reciclado Rojo',
   conent: 'un pastelón rojo bonito',
   price: 100,
   category: pastelon,

@@ -1,6 +1,6 @@
-<div class="banner">
-    <div class="container">
-      <h2 class="text-end">Detalle del producto</h2>
+<div class="bannerproduct my-5">
+    <div class="container border-bottom pb-3">
+      <h2 class="" align="center">Detalle del producto</h2>
     </div>
 </div>
 
@@ -9,7 +9,7 @@
     <% @products.each do |product| %>
       
       <div class="row justify-content-center align-items-center">
-        <div class="col-6">
+        <div class="col-6 mb-3">
           <%= image_tag product.image_url, class:"imagenproducto" %>
         </div>
         <div class="col-auto m-5">
@@ -17,14 +17,14 @@
             <%= product.name %>
           </div>
           $<%= product.price %>
-          <%= product.conent %>
           <%= product.price.currency %>
-          <div class="botones1">
+          <%= product.conent %>
+          <div class="botones1 mt-3">
             <%= link_to new_order_path(product_id: product.id) do %>
               <div class="compra btn">Comprar</div>
             <% end %>
             <%= link_to categories_path do %>
-              <div class="sigue btn ml-2">Añadir al carrito</div>
+              <div class="sigue btn ml-2">Añadir a la orden</div>
             <% end %>
           </div>
         </div>
