@@ -8,21 +8,25 @@
   <ul>
     <% @products.each do |product| %>
       
-      <div class="row">
+      <div class="row justify-content-center align-items-center">
         <div class="col-6">
           <%= image_tag product.image_url, class:"imagenproducto" %>
         </div>
-        <div class="col-6">
-          <%= product.name %>, 
-          <%= product.conent %>
+        <div class="col-auto m-5">
+          <div class="nombreproduct mb-2">
+            <%= product.name %>
+          </div>
           $<%= product.price %>
+          <%= product.conent %>
           <%= product.price.currency %>
-          <%= link_to new_order_path(product_id: product.id) do %>
-            <div class="btn btn-info m-3">Comprar</div>
-          <% end %>
-          <%= link_to categories_path do %>
-            <div class="btn btn-info m-3">Seguir comprando</div>
-          <% end %>
+          <div class="botones1">
+            <%= link_to new_order_path(product_id: product.id) do %>
+              <div class="compra btn">Comprar</div>
+            <% end %>
+            <%= link_to categories_path do %>
+              <div class="sigue btn ml-2">Añadir al carrito</div>
+            <% end %>
+          </div>
         </div>
       </div>
     <% end %>
