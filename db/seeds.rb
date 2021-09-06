@@ -26,7 +26,7 @@ limpiapies = Category.create!(
 
 puts "Creando dos productos para maceteros"
 Product.create!(
-  name: 'macetero verde',
+  name: 'Macetero Verde',
   conent: 'un macetero verde bonito',
   price: 5990,
   category: maceteros,
@@ -35,15 +35,15 @@ Product.create!(
 
 puts "Creando dos productos para pastelon"
 producto_pastelon = Product.create!(
-  name: 'pastelon reciclado',
-  conent: 'un pastelon liso bonito',
+  name: 'Pastelón Reciclado',
+  conent: 'un pastelón liso bonito',
   price: 50,
   category: pastelon,
   image_url: "https://vibradosflorencia.cl/images/productos/720-pastelon-liso-40x40-02.png"
 )
 Product.create!(
-  name: 'pastelon reciclado rojo',
-  conent: 'un pastelon rojo bonito',
+  name: 'Pastelón Reciclado Rojo',
+  conent: 'un pastelón rojo bonito',
   price: 100,
   category: pastelon,
   image_url: "https://pastelonescanales.cl/wp-content/uploads/2015/10/Modelo-Serena-Rojo.jpg"
@@ -51,14 +51,14 @@ Product.create!(
 
 puts "Creando dos productos para limpiapies"
 Product.create!(
-  name: 'limpiapies reciclado',
+  name: 'Limpiapies Reciclado',
   conent: 'un limpiapies verde y azul bonito',
   price: 10,
   category: limpiapies,
   image_url: "https://static.wixstatic.com/media/54ff2b_f2c30024f9ee44b29822950272d49375~mv2.jpg/v1/fill/w_1080,h_984,al_c,q_85/54ff2b_f2c30024f9ee44b29822950272d49375~mv2.jpg"
 )
 producto_limpiapies = Product.create!(
-  name: 'limpiapies reciclado rojo',
+  name: 'Limpiapies Reciclado Rojo',
   conent: 'un limpiapies rojo y negro bonito',
   price: 1000,
   category: limpiapies,
