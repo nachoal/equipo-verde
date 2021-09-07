@@ -27,11 +27,15 @@
         </tr>
       </tbody>
     </table>
-
-  <%= link_to categories_path do %>
-    <div class="btn btn-info">
-      Comprar
-    </div>
+     </tr>
+      </tbody>
+    </table>
+</div>
+<div class="container mt-4 boton_completar">
+  <%= simple_form_for @order do |f| %>
+    <%= f.input :status, as: :hidden, input_html: { value: "processed"} %>
+    <%= f.input :product_id, as: :hidden, input_html: { value: @product.id } %>
+    <%= f.submit "Completar orden", class: 'btn btn-info' %>
   <% end %>
 
 </div>
