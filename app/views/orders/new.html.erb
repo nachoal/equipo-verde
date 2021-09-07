@@ -31,7 +31,7 @@
       </tbody>
     </table>
 </div>
-<div class="container mt-4 botoncompletar">
+<div class="container mt-4 boton_completar">
   <%= simple_form_for @order do |f| %>
     <%= f.input :status, as: :hidden, input_html: { value: "processed"} %>
     <%= f.input :product_id, as: :hidden, input_html: { value: @product.id } %>
