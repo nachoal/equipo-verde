@@ -1,5 +1,5 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand" do %>
+  <%= link_to "http://localhost:3000", class: "navbar-brand" do %>
     <%= image_tag "https://previews.123rf.com/images/iglira/iglira1712/iglira171200087/91755007-ilustraci%C3%B3n-de-vector-de-s%C3%ADmbolo-de-reciclaje-verde-aislado-sobre-fondo-blanco-signo-de-reciclaje-en.jpg" %>
     <% end %>
 
@@ -8,29 +8,26 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item active pr-4">
           <%= link_to "Home", root_path, class: "nav-link" %>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item active pr-4">
           <%= link_to "Products", categories_path,  class: "nav-link" %>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item active pr-4">
           <%= link_to "About", about_path, class: "nav-link" %>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item active pr-4">
           <%= link_to "Recycle", recycle_path, class: "nav-link" %>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item active pr-4">
           <%= link_to "Contact", contact_path, class: "nav-link" %>
           </li>
-       
         <% if user_signed_in? %>
         <li class="nav-item dropdown">
-          <%= image_tag "https://scontent.fqrc2-1.fna.fbcdn.net/v/t1.6435-9/220359756_10158806645039843_1414523712104412032_n.jpg?_nc_cat=1&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeGym9tDh_tZKky7-mM5R-VN7bsj2zLK9b7tuyPbMsr1vkE44nZVWHcn3iqA2M-2E88&_nc_ohc=zI4x0gBEdRcAX90CAzs&_nc_ht=scontent.fqrc2-1.fna&oh=9c26058b7a1011a903893bd7ae392882&oe=615CF9D4", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+          <%= image_tag "https://st2.depositphotos.com/3554337/12097/i/950/depositphotos_120976894-stock-photo-green-user-avatar-icon.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <%= link_to "Action", "#", class: "dropdown-item" %>
-            <%= link_to "Another action", "#", class: "dropdown-item" %>
-            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+          <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
           </div>
           
         </li>
