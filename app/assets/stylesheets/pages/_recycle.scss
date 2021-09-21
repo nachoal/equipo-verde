@@ -1,15 +1,22 @@
 .banner4 {
-  background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/elcomercio/4SZBWXH22ZH4BBROGRPRIY7ZQI.jpg);
-  padding: 350px 0;
-  background-image: no-repeat;
-  background-image: fixed;
-  background-image: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
+  background-position: center;
+  padding: 350px 0;
 }
 
 #recycle {
   text-align: justify;
 }
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  }
+
+@media screen and ( max-width: 1024px ) {
+  img.responsive { width: 200px; }
+  }
+  
+  .orden {
+    background-color: #95D5B2;
+  }
