@@ -1,3 +1,13 @@
+<div class="banner20">
+   <div class="container d-flex justify-content-center" >
+     <div class="center">
+        <h1>Tu pedido contribuye a mejorar el planeta</h1>
+     </div>
+   </div>
+</div>
+<br>
+<br>
+<br>
 <div class="container">
   <h1>Tu Pedido</h1>
     <table class="table">
@@ -35,7 +45,9 @@
   <%= simple_form_for @order do |f| %>
     <%= f.input :status, as: :hidden, input_html: { value: "processed"} %>
     <%= f.input :product_id, as: :hidden, input_html: { value: @product.id } %>
-    <%= f.submit "Completar orden", class: 'btn btn-info' %>
+    <div class="btn boton_completar">
+      <%= f.submit "Comprar", class: 'btn' %>
+    </div>
   <% end %>
-
 </div>
+
