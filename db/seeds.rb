@@ -9,13 +9,13 @@ puts "Creando categorias..."
 maceteros = Category.create!(
   name: "Maceteros",
   description: "Dale una mirada distinta a tu jardin",
-  image_url: "https://greenbricks.cl/wp-content/uploads/2019/12/KADU.jpg"
+  image_url: "https://images.squarespace-cdn.com/content/v1/558095e4e4b095c5b4d764ee/1602278477469-MY24PKABT9PS1NY97B44/IMG_1650.JPG?format=2500w"
 )
 
 pastelon = Category.create!(
   name: "Pastelón",
   description: "Transforma la entrada de tu hogar y al mismo tiempo impactas al mundo",
-  image_url: "https://images.squarespace-cdn.com/content/v1/558095e4e4b095c5b4d764ee/1602278477469-MY24PKABT9PS1NY97B44/IMG_1650.JPG?format=2500w"
+  image_url: "https://greenbricks.cl/wp-content/uploads/2019/12/KADU.jpg"
 )
 
 limpiapies = Category.create!(

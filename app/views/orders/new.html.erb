@@ -31,11 +31,13 @@
       </tbody>
     </table>
 </div>
-<div class="container mt-4 boton_completar">
+<div class="container mt-4">
   <%= simple_form_for @order do |f| %>
     <%= f.input :status, as: :hidden, input_html: { value: "processed"} %>
     <%= f.input :product_id, as: :hidden, input_html: { value: @product.id } %>
-    <%= f.submit "Completar orden", class: 'btn btn-info' %>
+    <div class="btn botoncompletar">
+    <%= f.submit "Completar orden", class: 'btn' %>
+    </div>
   <% end %>
 
 </div>
