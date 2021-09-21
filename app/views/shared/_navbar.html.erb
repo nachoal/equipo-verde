@@ -8,19 +8,19 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-            <li class="nav-item active pr-4">
+            <li class="nav-item active pr-4 btn btn-flat">
           <%= link_to "Home", root_path, class: "nav-link" %>
           </li>
-          <li class="nav-item active pr-4">
+          <li class="nav-item active pr-4 btn btn-flat">
           <%= link_to "Products", categories_path,  class: "nav-link" %>
           </li>
-          <li class="nav-item active pr-4">
+          <li class="nav-item active pr-4 btn btn-flat">
           <%= link_to "About", about_path, class: "nav-link" %>
           </li>
-          <li class="nav-item active pr-4">
+          <li class="nav-item active pr-4 btn btn-flat">
           <%= link_to "Recycle", recycle_path, class: "nav-link" %>
           </li>
-          <li class="nav-item active pr-4">
+          <li class="nav-item active pr-4 btn btn-flat">
           <%= link_to "Contact", contact_path, class: "nav-link" %>
           </li>
         <% if user_signed_in? %>
@@ -33,7 +33,7 @@
         </li>
       <% else %>
 
-        <li class="nav-item">
+        <li class="nav-item   btn btn-flat">
           <%= link_to "Login", new_user_session_path, class: "nav-link" %>
         </li>
         
