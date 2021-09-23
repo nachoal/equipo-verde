@@ -28,7 +28,7 @@ puts "Creando dos productos para maceteros"
 Product.create!(
   name: 'Macetero Verde',
   conent: 'un macetero verde bonito',
-  price: 5990,
+  price: 2990,
   category: maceteros,
   image_url: "https://dvp.cl/wp-content/uploads/2016/09/1715100002560-1.jpg"
 )
@@ -37,14 +37,14 @@ puts "Creando dos productos para pastelon"
 producto_pastelon = Product.create!(
   name: 'Pastelón Reciclado',
   conent: 'un pastelón liso bonito',
-  price: 50,
+  price: 3990,
   category: pastelon,
   image_url: "https://vibradosflorencia.cl/images/productos/720-pastelon-liso-40x40-02.png"
 )
 Product.create!(
   name: 'Pastelón Reciclado Rojo',
   conent: 'un pastelón rojo bonito',
-  price: 100,
+  price: 3990,
   category: pastelon,
   image_url: "https://pastelonescanales.cl/wp-content/uploads/2015/10/Modelo-Serena-Rojo.jpg"
 )
@@ -53,14 +53,14 @@ puts "Creando dos productos para limpiapies"
 Product.create!(
   name: 'Limpiapies Reciclado',
   conent: 'un limpiapies verde y azul bonito',
-  price: 10,
+  price: 1990,
   category: limpiapies,
   image_url: "https://static.wixstatic.com/media/54ff2b_f2c30024f9ee44b29822950272d49375~mv2.jpg/v1/fill/w_1080,h_984,al_c,q_85/54ff2b_f2c30024f9ee44b29822950272d49375~mv2.jpg"
 )
 producto_limpiapies = Product.create!(
   name: 'Limpiapies Reciclado Rojo',
   conent: 'un limpiapies rojo y negro bonito',
-  price: 1000,
+  price: 1990,
   category: limpiapies,
   image_url: "https://cdnx.jumpseller.com/grupo-ciclos/image/11972640/resize/540/540?1623184048"
 )
